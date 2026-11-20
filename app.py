@@ -837,7 +837,7 @@ with tab_eval:
 # TAB 4: DEVELOPER PROFILE & ALGORITHM INFO
 # ---------------------------------------------------------
 with tab_about:
-    st.markdown('<div class="section-title">👨‍💻 ข้อมูลผู้พัฒนาโครงงาน & สถาปัตยกรรมระบบ</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">👨‍💻 ข้อมูลผู้พัฒนา & สถาปัตยกรรมระบบ</div>', unsafe_allow_html=True)
     
     col_dev_avatar, col_dev_details = st.columns([1, 2])
     
