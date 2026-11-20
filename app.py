@@ -36,7 +36,7 @@ div[data-testid="stSidebar"] * {color:#f3f7fb;}
 </style>
 """, unsafe_allow_html=True)
 
-DATA_PATH = Path(__file__).parent / "Heart3.csv"
+DATA_PATH = Path(__file__).parent / "/data/Heart3.csv"
 FEATURES = ["Age","Sex","ChestPainType","RestingBP","Cholesterol","FastingBS",
             "RestingECG","MaxHR","ExerciseAngina","Oldpeak","ST_Slope"]
 NUMERIC = ["Age","RestingBP","Cholesterol","MaxHR","Oldpeak"]
