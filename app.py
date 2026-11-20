@@ -438,8 +438,8 @@ with st.sidebar:
     if dev_b64:
         st.markdown(f"""
         <div class="sidebar-dev-card">
-            <img src="data:image/jpeg;base64,{dev_b64}" class="sidebar-dev-img" alt="ผู้พัฒนาโครงงาน" />
-            <p class="sidebar-dev-name">ผู้พัฒนาโครงงาน</p>
+            <img src="data:image/jpeg;base64,{dev_b64}" class="sidebar-dev-img" alt="ผู้พัฒนา" />
+            <p class="sidebar-dev-name">ผู้พัฒนา</p>
             <p class="sidebar-dev-role">Data Science & AI Studio</p>
             <div class="status-pill">
                 <span class="pulse-dot"></span> ระบบพร้อมทำงาน
@@ -447,7 +447,7 @@ with st.sidebar:
         </div>
         """, unsafe_allow_html=True)
     elif DEV_IMG_PATH.exists():
-        st.image(str(DEV_IMG_PATH), caption="ผู้พัฒนาโครงงาน", use_container_width=True)
+        st.image(str(DEV_IMG_PATH), caption="ผู้พัฒนา", use_container_width=True)
 
     st.markdown("### ⚙️ ปรับแต่งพารามิเตอร์โมเดล")
     
@@ -516,7 +516,7 @@ tab_pred, tab_data, tab_eval, tab_about = st.tabs([
     "🩺 ทดลองทำนายผลรายบุคคล",
     "📊 ภาพรวม & การสำรวจข้อมูล",
     "⚡ ประสิทธิภาพของโมเดล",
-    "👨‍💻 ผู้พัฒนาโครงงาน & สถาปัตยกรรม"
+    "👨‍💻 ผู้พัฒนา & สถาปัตยกรรม"
 ])
 
 # ---------------------------------------------------------
@@ -843,16 +843,16 @@ with tab_about:
     
     with col_dev_avatar:
         if DEV_IMG_PATH.exists():
-            st.image(str(DEV_IMG_PATH), caption="ผู้พัฒนาโครงงาน / Project Developer", use_container_width=True)
+            st.image(str(DEV_IMG_PATH), caption="ผู้พัฒนา / Project Developer", use_container_width=True)
         else:
             st.info("ไม่พบไฟล์รูปภาพผู้พัฒนา")
             
     with col_dev_details:
         st.markdown("""
-        ### โครงงานระบบจำแนกข้อมูลโรคหัวใจ (Heart Disease Classification)
+        ### ระบบจำแนกข้อมูลโรคหัวใจ (Heart Disease Classification)
         **ภาควิชา/กลุ่มการเรียนรู้:** วิทยาการข้อมูลและการเรียนรู้ของเครื่อง (Machine Learning & Data Science)
         
-        #### 🎯 วัตถุประสงค์ของโครงงาน:
+        #### 🎯 วัตถุประสงค์ของ:
         1. ศึกษาและประยุกต์ใช้อัลกอริทึม **K-Nearest Neighbors (KNN)** ในการจำแนกข้อมูลทางการแพทย์
         2. พัฒนาเว็บแอปพลิเคชันเชิงโต้ตอบด้วย **Streamlit** ที่มี UI/UX ทันสมัย ใช้งานง่าย และเข้าถึงได้ทุกคน
         3. ศึกษาผลกระทบของการปรับแต่งค่าพารามิเตอร์ $K$ และฟังก์ชันวัดระยะทางต่อความแม่นยำของโมเดล
