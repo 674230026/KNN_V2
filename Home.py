@@ -69,7 +69,7 @@ if st.button("ทำนายผล"):
    x_input = pd.DataFrame([[age, sex, ct, bp, cho, bs, ecg, hr, ea, op, ss]], columns=X.columns)
 
    out = Knn_model.predict(x_input)
-   st.write(f"ผลลัพธ์จากโมเดล (0=ปกติ, 1=เสี่ยงโรคหัวใจ): {out[0]}")
+   st.write(f"ผลลัพธ์จากโมเดล (0=ปกติ, 1=เสี่ยงโรคหัวใจ): {type(out[0])}")
 
    if out[0] == 0:
        st.success("ผลการทำนาย: ปกติ (ไร้....หัวใจ)")
