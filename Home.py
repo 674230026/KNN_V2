@@ -77,7 +77,7 @@ if st.button("ทำนายผล"):
        st.success("ผลการทำนาย: ปกติ (ไร้....หัวใจ)")
        st.image("./img/none brain.jpg")
    elif out[0] == 1:
-       st.error("ผลการทำนาย: มีความเสี่ยงเป็นโรคหัวใจ อาจะอยู่ได้ไม่นานา")
+       st.success("ผลการทำนาย: มีความเสี่ยงเป็นโรคหัวใจ อาจะอยู่ได้ไม่นานา")
        st.image("./img/boken heart.jpg")
 else:
    st.write("ไม่ทำนาย")
