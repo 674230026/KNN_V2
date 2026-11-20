@@ -66,9 +66,11 @@ if st.button("ทำนายผล"):
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)  
 
-   x_input = pd.DataFrame([[age, sex, ct, bp, cho, bs, ecg, hr, ea, op, ss]], columns=X.columns)
+   x_input = pd.DataFrame([[age, sex, ct, bp, cho, bs, ecg, hr, ea, op, ss]])
 
+   st.write(Knn_model.predict(x_input))
    out = Knn_model.predict(x_input)
+
    #st.write(f"ผลลัพธ์จากโมเดล (0=ปกติ, 1=เสี่ยงโรคหัวใจ): {type(out[0])}")
 
    if out[0] == 0:
